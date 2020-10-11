@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>book-shop</title>
+</head>
+
+<body onload="onInit()">
+    <section class="general-container">
+        <section class="books-container">
+            <header>
+                <h1>BookShop</h1>
+                <h2>Management Area</h2>
+            </header>
+            <section class="books-to-show">
+                <table>
+                    <thead>
+                        <tr>
+                            <td> id <span class="sort-by" onclick="onSortBy('id')">&#8681</span> </td>
+                            <td> Title <span class="sort-by" onclick="onSortBy('name')">&#8681</span> </td>
+                            <td> Price <span class="sort-by" onclick="onSortBy('price')">&#8681</span> </td>
+                            <!-- <td class="sort-by" onclick="onSortBy('text')">Title &#8681</td>
+                            <td class="sort-by" onclick="onSortBy('price')">Price &#8681</td> -->
+                            <td colspan="3">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <section class="page">
+                <button class="btn prev-page" onclick="onPage(-1)"><<</button>
+                <div class="btn this-page"></div>
+                <button class="btn next-page" onclick="onPage(1)">>></button>
+            </section>
+            <!-- <button class="toggle-book-modal" onclick="onNewBookOption()">Add book</button> -->
+            <section class="add-book">
+                <label>Book name:</label>
+                <input class="input book-name" name="book-name" type="text" placeholder="Enter the name of the book">
+                <label>price</label>
+                <input class="input book-price" name="book-price" type="number" placeholder="Enter the price">
+                <button class="btn add-new-book" onclick="onAddBook()">Add book</button>
+            </section>
+        </section>
+        <section class="modal" hidden>
+            <h3>name</h3>
+            <p>description</p>
+            <img src="" alt="">
+            <div class="rate">
+                <button>-</button>
+                <input type="number" value="0">
+                <button>+</button>
+            </div>
+            <button onclick="onCloseModal()">Close</button>
+        </section>
+    </section>
+    <script src="js/utils.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

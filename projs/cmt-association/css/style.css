@@ -1,0 +1,40 @@
+.logo {
+    height: 80px;
+}
+
+.carousel-item {
+    max-height: 430px;
+    min-height: 220px;
+    filter: brightness(0.8);
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.jobs {
+    padding: 30px;
+}
+
+.jobs-container {
+    padding: 30px;
+}
+
+.footer {
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-width: 150pxpx;
+}
+
+.contact-us {
+    margin-top: 30px;
+}

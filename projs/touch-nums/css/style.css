@@ -1,0 +1,46 @@
+.cell {
+    width: 50px;
+    height: 70px;
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 20%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(83, 83, 83);
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.board {
+    border-radius: 20%;
+}
+
+table {
+    margin: auto;
+}
+
+.square {
+    background-color: rgb(207, 232, 240);
+    border: 1px black solid;
+    border-radius: 5%;
+    /* margin: 20px; */
+    width: 150px;
+    margin: auto;
+}
+
+.level {
+    width: 312px;
+}
+
+body {
+    font-family: fantasy;
+    text-align: center;
+}
+
+.next-number {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.time {
+    display: inline-block;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>myTouchGame</title>
+</head>
+
+<body onload="init()">
+    <h1>Touch the numbers</h1>
+    <div class="game">
+        <div class="level square">
+            <h2>choose your level</h2>
+            <button onclick="chooseLevel(1)">easy</button>
+            <button onclick="chooseLevel(2)">medium</button>
+            <button onclick="chooseLevel(3)">hard</button>
+        </div>
+        <div class="next-number square">
+            <h2>next to find:</h2>
+            <div class="number">
+                0
+            </div>
+        </div>
+        <div class="time square">
+            <h2>your time:</h2>
+            <div class="running-time">
+                0.000
+            </div>
+        </div>
+
+        <table cellpadding="10">
+            <tbody class="board">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
